@@ -1,0 +1,118 @@
+<!-- Form -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Peserta</title>
+
+  <!--
+  css : cascading style sheet()
+  css : 3 (internal, external, inline)
+  Internal css : css nya ada di dalam file html
+  External css : css nya ada di file ber ext .css
+  Inline css : css nya dijadikan attr dengan style
+  -->
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #DEDED1;
+    }
+
+    h2 {
+      color: black;
+    }
+
+    p {
+      color: black;
+      font-size: 14px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      font-size: 15px;
+    }
+
+    input[type='text'],
+    input[type='email'],
+    input[type='number'] {
+      width: 50%;
+      padding: 12px 15px;
+      border-radius: 10px;
+      outline: none;
+      box-sizing: border-box;
+      transition: border-color 0.3s;
+    }
+
+    input:focus {
+      border-color: #F87B1B;
+    }
+
+    .btn-submit,
+    .btn-reset {
+      width: 50%;
+      padding: 15px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .btn-submit {
+      background-color: #77BEF0;
+      color: white;
+    }
+
+    .btn-reset {
+      background-color: #093FB4;
+      color: #DEDED1;
+      font-size: 12px;
+      margin-top: 10px;
+    }
+
+    .btn-submit:hover {
+      background-color: #093FB4;
+    }
+
+    .btn-reset:hover {
+      background-color: #77BEF0;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Pendaftaran Siswa</h2>
+  <p>Silahkan isi data diri Anda</p>
+
+  <form method="post" action="3.html">
+    <div class="form-group">
+      <label for="nama">Nama</label>
+      <input type="text" placeholder="Masukkan Nama" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" placeholder="Contoh: admin@gmail.com" required>
+    </div>
+    <div class="form-group">
+      <label for="number">No. Telp</label>
+      <input type="text" placeholder="0821229021" required>
+    </div>
+    <div class="form-group">
+      <button type="submit" class="btn-submit">Simpan</button>
+      <input type="reset" class="btn-reset" value="Batal">
+    </div>
+  </form>
+</body>
+
+</html>

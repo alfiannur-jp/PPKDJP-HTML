@@ -19,6 +19,13 @@ html {
   text-align: center;
 }
 
+.bg-login {
+  background-image: url(un1.avif);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .bg-1 {
   background-image: url(un1.avif);
 }
@@ -53,12 +60,12 @@ html {
 
 h2 {
   font-size: 2rem;
-  color: #03AED2;
+  color: #35858E;
 }
 
 .btn-contact {
   padding: 12px 25px;
-  background-color: #03AED2;
+  background-color: #7DA78C;
   color: white;
   border: none;
   border-radius: 5px;
@@ -68,7 +75,69 @@ h2 {
 }
 
 footer {
-  background-color: #56B6C6;
+  background-color: #7DA78C;
   text-align: center;
   padding: 20px 0;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10;
+}
+
+.contact-form input,
+textarea {
+  padding: 10px;
+  border: 1px solid #35858E;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background: #35858E;
+  color: white;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Keahlian */
+.wraper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.skill-wraper {
+  background-color: #7DA78C;
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: left;
+  width: 225px;
+}
+
+.skill-wraper h3 {
+  margin-top: 0px;
+  color: #35858E;
+  text-align: center;
+}
+
+.skill-wraper ul {
+  padding-left: 20px;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.gambar-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
 }

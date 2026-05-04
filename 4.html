@@ -12,6 +12,7 @@
   <section class="parallax bg-1">
     <div class="content">
       <h1>Halo, Saya Alfian Noorokhim</h1>
+      <img src="joker.avif" class="profile-img" alt="">
       <p>Web Programmer & Students</p>
     </div>
   </section>
@@ -19,6 +20,10 @@
   <section class="normal-section">
     <div class="container">
       <h2>Tentang Saya</h2>
+      <img src="gambar1.avif" class="gambar-img" alt="">
+      <img src="gambar2.avif" class="gambar-img" alt="">
+      <img src="gambar3.avif" class="gambar-img" alt="">
+      <img src="gambar4.avif" class="gambar-img" alt="">
       <p>Saya adalah seorang yang sedang belajar Web Programming di PPKD Jakarta Pusat</p>
     </div>
   </section>
@@ -26,7 +31,27 @@
   <section class="parallax bg-2">
     <div class="content">
       <h2>Keahlian Saya</h2>
-      <p>Membaca, Ngoding, Maen Game, Nongkrong, Tidur</p>
+      <div class="wraper">
+        <div class="skill-wraper">
+          <h3>Skill</h3>
+          <ul>
+            <li>HTML</li>
+            <li>PHP</li>
+            <li>JavaScript</li>
+            <li>PYTHON</li>
+          </ul>
+        </div>
+
+        <div class="skill-wraper">
+          <h3>Expriences</h3>
+          <ul>
+            <li>Magang</li>
+            <li>Membuat Website</li>
+            <li>Belajar di PPKD Jakarta Pusat</li>
+            <li>Membaca Dokumentasi</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -34,7 +59,12 @@
     <div class="container">
       <h2>Hubungi Saya</h2>
       <p>Tertarik bekerja sama? Kirimkan pesan melalui email atau media sosial saya</p>
-      <button class="btn-contact">Kirim Pesan</button>
+      <form action="" method="post" class="contact-form">
+        <input type="text" name="name" placeholder="Isi Nama Anda">
+        <input type="email" name="email" placeholder="Isi Email Anda">
+        <textarea name="message" cols="30" rows="10"></textarea>
+        <button type="submit">Kirim</button>
+      </form>
     </div>
   </section>
 

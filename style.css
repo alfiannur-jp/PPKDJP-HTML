@@ -5,6 +5,7 @@ html {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: black;
   line-height: 1.6;
+  scroll-behavior: smooth;
 }
 
 .parallax {
@@ -140,4 +141,94 @@ textarea {
   width: 150px;
   height: 150px;
   object-fit: cover;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  width: 100%;
+}
+
+nav a {
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+  color: #35858E;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: white;
+}
+
+.logo {
+  color: whitesmoke;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+/* BURGER MENU START */
+#menu {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-container button {
+  display: none;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* UKURAN TABLET */
+@media (max-width: 768px) {
+  .nav-container button {
+    display: block;
+  }
+
+  #menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 200px;
+    padding: 10px 0px;
+  }
+
+  #menu a {
+    padding: 10px;
+  }
+
+  #menu.show {
+    display: flex;
+  }
+}
+
+/* BURGER MENU END */
+
+/* UKURAN HP */
+@media (max-width: 480px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
 }
